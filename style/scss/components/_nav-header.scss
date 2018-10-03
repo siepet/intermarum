@@ -1,0 +1,45 @@
+.nav-header {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        margin-bottom: .8rem
+    }
+    
+    &__box-1 {
+        
+    }
+
+    &__items {
+        display: flex;
+       
+
+    }
+
+    &__items-1 {
+        margin-bottom: 1rem;
+    }
+
+    &__items-2 {
+
+    }
+
+
+    &__list {
+        margin-right: 2rem;
+    }
+
+    &__link {
+        color: $color-white-2;
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        &:hover {
+            color: $color-orange-1;
+        }
+    }
+    
+}

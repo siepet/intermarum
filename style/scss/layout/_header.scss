@@ -1,0 +1,35 @@
+.header {
+
+    
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        padding: 4rem 2rem;
+        
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+        img {
+        max-width: 70%;
+        }
+        
+    }
+
+    &__cta {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cta .btn-primary:first-child {
+        margin-right: 1rem;
+        
+    }
+}

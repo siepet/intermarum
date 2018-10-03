@@ -1,0 +1,17 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
+
+@import "layout/header";
+@import "layout/about";
+
+
+@import "components/nav-header";
+@import "components/btn-primary";
+@import "components/wave-background";
+
+//layout
+

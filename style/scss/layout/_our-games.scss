@@ -1,0 +1,34 @@
+.our-games {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .game-box {
+        margin-bottom: 5rem;
+    }
+
+    &__container {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__header {
+
+        font-size: 2.8rem; //44px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 8rem 0 5rem 0;
+
+        &--white {
+            color :$color-white-1;
+        }
+
+        &--orange {
+            color: $color-orange-1;
+        }
+
+    }
+}

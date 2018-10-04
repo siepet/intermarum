@@ -1,0 +1,65 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 6rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    // ICON & PHOTO
+
+    &__picture {
+        position: relative;
+        margin-bottom: 3rem;
+    }
+
+    &__photo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__icon-or-picture {
+        /* Style for "icon" */
+        
+        color: $color-white-7;
+        font-family: "Exo - Demi Bold";
+        font-size: 5em;
+        font-weight: 400;
+       
+       
+    }
+
+    // TEXT
+
+    &__about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__header {}
+
+    &__border {
+        display: block;
+        width: 40%;
+        height: 6px;
+        background-color: $color-orange-1;
+        margin: 2rem 0;
+    }
+
+    &__txt:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+
+}

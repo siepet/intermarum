@@ -12,24 +12,110 @@ body {
 
 /////////////////////////
 // SECTION ABOUT
+.about {
 
-.about__header {
-    font-size: 4rem;
-    font-weight: 900;
-    text-transform: uppercase;
+    &__header {
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+
+    }
+
+    &__txt {
+        color: $color-grey-5;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2.6rem;
+
+        &--light {
+
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+}
+
+/////////////////////////
+// SECTION OUR GAMES
+
+.our-games {
+
+    &__header {
+        font-size: 2.8rem; //44px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+/////////////////////////
+// SECTION TEAM
+
+.team {
+
+    &__bold {
+        font-size: 2.3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        &--small {
+            font-size: 1.8rem;
+        }
+
+    }
+
+    &__light {
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 3rem;
+        text-transform: capitalize;
+
+        &--upper {
+            text-transform: uppercase;
+        }
+
+        &--small {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__heading {
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 
 }
 
-.about__txt {
-    color: $color-grey-5;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 26px;
+/////////////////////////
+// SECTION JOBS
 
-    &--light {
+.jobs {
 
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 26px;
+    &__header {
+        font-size: 4rem; //6
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__txt-bold {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2.6rem;
+        letter-spacing: 0.72px;
+
+    }
+
+    &__txt-light {
+        font-size: 1.3rem;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        line-height: 28px;
+
+    }
+
+    &__mail {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 29.24px;
     }
 }

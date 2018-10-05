@@ -1,0 +1,17 @@
+.icon-photo {
+
+        &__photo-box {
+        position: relative;
+        }
+        
+        &__icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $color-white-7;
+            font-size: 5rem;
+            font-weight: 700;
+            z-index: 10;
+        }   
+}

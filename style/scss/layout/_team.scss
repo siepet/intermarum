@@ -1,0 +1,136 @@
+.team {
+
+    
+
+    
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        max-width: 950px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__header {
+        font-size: 2.8rem; //4.4
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $color-black-3;
+
+        &--color {
+            color: $color-orange-1;
+        }
+    }
+
+    &__photo-box {}
+
+    &__photo {
+        max-width: 100%;
+        height: auto;
+    }
+    /////////////////////
+    // MENAGEMENT & EMPLOYEE
+
+    &__management-box {}
+
+    &__management {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem;
+    }
+
+    &__ceo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $color-black-3;
+    }
+
+    &__light {
+        color: $color-grey-1;
+    }
+
+    &__ceo:first-child {
+        margin-bottom: 1rem;
+    }
+    
+    &__employee-container {
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+        z-index: 20;
+        
+    }
+
+    &__heading-box {
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    &__heading {
+        width: 154px;
+        padding: .8rem;
+        border-radius: 15px;
+        background-color: $color-orange-1;
+        text-align: center;
+        color: $color-white-1;
+        // margin-bottom: 3rem;
+    }
+
+    &__employee {}
+
+    &__single {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        white-space: nowrap;
+    }
+
+    
+
+    &__design, &__art {
+        
+        
+        // flex: 1;
+    }
+
+
+    &__code {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       flex: 2;
+       
+       
+    }
+
+    &__column-1, &__column-2 {
+         margin: 0 auto;
+       
+    }
+
+  
+
+
+
+
+
+    
+
+
+
+}

@@ -336,11 +336,59 @@ body {
   color: #4c4c4c;
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 26px; }
+  line-height: 2.6rem; }
   .about__txt--light {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px; }
+    font-size: 1.4rem;
+    font-weight: 400; }
+
+.our-games__header {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.team__bold {
+  font-size: 2.3rem;
+  font-weight: 900;
+  text-transform: uppercase; }
+  .team__bold--small {
+    font-size: 1.8rem; }
+
+.team__light {
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 3rem;
+  text-transform: capitalize; }
+  .team__light--upper {
+    text-transform: uppercase; }
+  .team__light--small {
+    font-size: 1.8rem; }
+
+.team__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.jobs__header {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.jobs__txt-bold {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  letter-spacing: 0.72px; }
+
+.jobs__txt-light {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 28px; }
+
+.jobs__mail {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 29.24px; }
 
 .header {
   display: flex;
@@ -378,20 +426,6 @@ body {
     align-content: center;
     align-items: center;
     max-width: 90%; }
-  .about__picture {
-    position: relative;
-    margin-bottom: 3rem; }
-  .about__photo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .about__icon-or-picture {
-    /* Style for "icon" */
-    color: #efebe8;
-    font-family: "Exo - Demi Bold";
-    font-size: 5em;
-    font-weight: 400; }
   .about__about-us {
     display: flex;
     flex-direction: column;
@@ -417,21 +451,133 @@ body {
   flex-direction: column;
   align-items: center; }
   .our-games .game-box {
-    margin-bottom: 5rem; }
+    margin: 0 3rem 5rem 0; }
   .our-games__container {
-    max-width: 90%;
+    max-width: 95rem;
     display: flex;
-    flex-direction: column;
-    align-items: center; }
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-evenly; }
+  .our-games__header-box {
+    width: 100%;
+    text-align: center; }
   .our-games__header {
-    font-size: 2.8rem;
-    font-weight: 900;
-    text-transform: uppercase;
     margin: 8rem 0 5rem 0; }
     .our-games__header--white {
       color: #ffffff; }
     .our-games__header--orange {
       color: #f7941d; }
+
+.team {
+  display: flex;
+  justify-content: center; }
+  .team__container {
+    max-width: 950px;
+    display: flex;
+    flex-direction: column; }
+  .team__header-box {
+    width: 100%;
+    text-align: center; }
+  .team__header {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #1c1a18; }
+    .team__header--color {
+      color: #f7941d; }
+  .team__photo {
+    max-width: 100%;
+    height: auto; }
+  .team__management {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem; }
+  .team__ceo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1c1a18; }
+  .team__light {
+    color: #6d6d6d; }
+  .team__ceo:first-child {
+    margin-bottom: 1rem; }
+  .team__employee-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    z-index: 20; }
+  .team__heading-box {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem; }
+  .team__heading {
+    width: 154px;
+    padding: .8rem;
+    border-radius: 15px;
+    background-color: #f7941d;
+    text-align: center;
+    color: #ffffff; }
+  .team__single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    white-space: nowrap; }
+  .team__code {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 2; }
+  .team__column-1, .team__column-2 {
+    margin: 0 auto; }
+
+.jobs {
+  background-color: #f7941d;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .jobs__bg-top {
+    height: 23rem;
+    background-color: #f7941d;
+    background-image: url(/img/bg-wave-orange.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    backface-visibility: hidden;
+    margin-top: -15rem; }
+  .jobs__container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .jobs__content {
+    color: #ffffff; }
+  .jobs__header {
+    margin-bottom: 1.5rem; }
+  .jobs__underline {
+    display: inline-block;
+    height: 6px;
+    width: 13%;
+    background-color: #ffffff; }
+  .jobs__txt-bold {
+    margin-bottom: 1rem; }
+  .jobs__mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1c1a18;
+    width: 286px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin: 1.5rem 0 1.5rem; }
 
 .nav-header {
   display: flex;
@@ -545,3 +691,16 @@ body {
     transition: color 1s; }
     .game-box__link:hover {
       color: #efebe8; }
+
+.icon-photo__photo-box {
+  position: relative; }
+
+.icon-photo__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #efebe8;
+  font-size: 5rem;
+  font-weight: 700;
+  z-index: 10; }

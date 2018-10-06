@@ -1,5 +1,5 @@
-@import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/normalize";
 @import "base/base";
@@ -11,6 +11,7 @@
 @import "layout/our-games";
 @import "layout/team";
 @import "layout/jobs";
+@import "layout/contact";
 
 
 @import "components/nav-header";
@@ -18,7 +19,7 @@
 @import "components/wave-background";
 @import "components/game-box";
 @import "components/icon-photo";
+@import "components/form";
 
 
-//layout
 

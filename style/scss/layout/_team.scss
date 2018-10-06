@@ -1,8 +1,5 @@
 .team {
 
-    
-
-    
     display: flex;
     justify-content: center;
 
@@ -18,9 +15,6 @@
     }
 
     &__header {
-        font-size: 2.8rem; //4.4
-        font-weight: 900;
-        text-transform: uppercase;
         color: $color-black-3;
 
         &--color {

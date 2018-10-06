@@ -346,6 +346,11 @@ body {
   font-weight: 900;
   text-transform: uppercase; }
 
+.team__header {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: uppercase; }
+
 .team__bold {
   font-size: 2.3rem;
   font-weight: 900;
@@ -389,6 +394,11 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 29.24px; }
+
+.contact__header {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: uppercase; }
 
 .header {
   display: flex;
@@ -480,9 +490,6 @@ body {
     width: 100%;
     text-align: center; }
   .team__header {
-    font-size: 2.8rem;
-    font-weight: 900;
-    text-transform: uppercase;
     color: #1c1a18; }
     .team__header--color {
       color: #f7941d; }
@@ -579,6 +586,17 @@ body {
     background-color: #ffffff;
     margin: 1.5rem 0 1.5rem; }
 
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contact__header {
+  color: #ffffff;
+  margin: 5.5rem; }
+  .contact__header--color {
+    color: #f7941d; }
+
 .nav-header {
   display: flex;
   flex-direction: column;
@@ -612,6 +630,9 @@ body {
   align-items: center;
   transition: all .3s; }
 
+.btn-primary--big {
+  width: 20rem; }
+
 .btn-primary__txt {
   display: inline-block;
   text-transform: uppercase;
@@ -621,7 +642,7 @@ body {
   font-size: 1.4rem;
   text-align: center; }
 
-.btn-primary__icon {
+.btn-primary__icon-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -630,6 +651,11 @@ body {
   height: 4rem;
   margin-right: 1rem;
   background-color: #eb6900; }
+
+.btn-primary__icon {
+  fill: #ffffff;
+  width: 2rem;
+  height: 2rem; }
 
 .btn-primary:hover {
   background-color: #ffffff; }
@@ -704,3 +730,44 @@ body {
   font-size: 5rem;
   font-weight: 700;
   z-index: 10; }
+  .icon-photo__icon--orange {
+    color: #e47307; }
+
+.form__group {
+  position: relative; }
+
+.form__icon-bg {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  background-color: #f2f2f2;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.form__icon {
+  fill: #b9b9b9;
+  width: 2rem;
+  height: 2rem; }
+
+.form__input {
+  width: 30rem;
+  height: 5rem;
+  box-shadow: -2px 3px 12px rgba(255, 255, 255, 0.4);
+  border-radius: 31px;
+  background-color: #ffffff;
+  text-indent: 5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1.6rem; }
+
+.form__textarea {
+  height: 100%;
+  text-indent: 0;
+  padding: 2rem 5rem; }
+
+.form .btn-primary {
+  margin: auto; }

@@ -52,6 +52,11 @@ body {
 
 .team {
 
+    &__header {
+        font-size: 2.8rem; //4.4
+        font-weight: 900;
+        text-transform: uppercase;
+    }
     &__bold {
         font-size: 2.3rem;
         font-weight: 900;
@@ -117,5 +122,17 @@ body {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 29.24px;
+    }
+}
+
+/////////////////////////
+// SECTION JOBS
+
+.contact {
+
+    &__header {
+        font-size: 2.8rem; //4.4
+        font-weight: 900;
+        text-transform: uppercase;
     }
 }

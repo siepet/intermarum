@@ -31,9 +31,6 @@
                     <li class="nav-header__list">
                         <a href="#" class="nav-header__link">team</a>
                     </li>
-                    <!-- <li class="nav-header__list nav-header__logo">
-                            <img src="img/LOGO.png" alt="logo" class="nav-header__logo">
-                        </li> -->
                 </ul>
 
 
@@ -57,14 +54,18 @@
             <div class="header__cta">
                 <a href="#" class="btn-primary">
                     <span class="btn-primary__txt">our games</span>
-                    <span class="btn-primary__icon">
-                        <img src="img/icon/icon-pad.png" alt="pad icon">
+                    <span class="btn-primary__icon-box">
+                        <svg class="btn-primary__icon">
+                            <use xlink:href="/img/icon/sprite.svg#icon-gamepad"></use>
+                        </svg>
                     </span>
                 </a>
                 <a href="#" class="btn-primary">
                     <span class="btn-primary__txt">contact us</span>
-                    <span class="btn-primary__icon">
-                        <img src="img/icon/icon-mail.png" alt="mail icon">
+                    <span class="btn-primary__icon-box">
+                        <svg class="btn-primary__icon">
+                            <use xlink:href="/img/icon/sprite.svg#icon-envelope-o"></use>
+                        </svg>
                     </span>
                 </a>
             </div>
@@ -340,18 +341,19 @@
 
                 </div>
             </div>
-            
+
     </section>
 
     <!-- END SECTION TEAM -->
     <!-- SECTION JOBS -->
+
     <div class="jobs__bg-top"></div>
     <section class="jobs">
         <div class="jobs__container">
             <div class="icon-photo">
                 <figure class="icon-photo__photo-box">
                     <img src="img/icin-circle-dark.png" alt="circle" class="icon-photo__img">
-                    <figcaption class="icon-photo__icon"></figcaption>
+                    <figcaption class="icon-photo__icon icon-photo__icon--orange">icon</figcaption>
                 </figure>
             </div>
             <div class="jobs__content">
@@ -381,9 +383,129 @@
                 </div>
             </div>
         </div>
+
     </section>
 
+    <!--END SECTION JOBS  -->
+    <!-- SECTION CONTACT -->
 
+    <section class="contact wave-background">
+        <div class="contact__container">
+            <h3 class="contact__header">
+                <span>
+                    contact
+                </span>
+                <span class="contact__header--color">
+                    us
+                </span>
+            </h3>
+            <form action="" class="form">
+                <div class="form__column-1">
+                    <div class="form__group">
+                        <span class="form__icon-bg">
+                            <svg class="form__icon">
+                                <use xlink:href="/img/icon/sprite.svg#icon-user"></use>
+                            </svg>
+                        </span>
+                        <input type="text" class="form__input" placeholder="Your Name" id="name" required>
+                    </div>
+                    <div class="form__group">
+                        <span class="form__icon-bg">
+                            <svg class="form__icon">
+                                <use xlink:href="/img/icon/sprite.svg#icon-envelope-o"></use>
+                            </svg>
+                        </span>
+                        <input type="text" class="form__input" placeholder="Your Email" id="mail" required>
+                    </div>
+                    <div class="form__group">
+                        <span class="form__icon-bg">
+                            <svg class="form__icon">
+                                <use xlink:href="/img/icon/sprite.svg#icon-sphere"></use>
+                            </svg>
+                        </span>
+                        <input type="text" class="form__input" placeholder="Your Website (optional)" id="website">
+                    </div>
+                </div>
+                <div class="form__column-2">
+                    <div class="form__group">
+                        <span class="form__icon-bg">
+                            <svg class="form__icon">
+                                <use xlink:href="/img/icon/sprite.svg#icon-sphere"></use>
+                            </svg>
+                        </span>
+                        <textarea name="" id="message" placeholder="Your Message" class="form__input form__textarea"></textarea>
+                    </div>
+                    <button class="btn-primary btn-primary--big">
+                        <span class="btn-primary__txt">send message</span>
+                        <span class="btn-primary__icon-box">
+                            <svg class="btn-primary__icon">
+                                <use xlink:href="/img/icon/sprite.svg#icon-envelope-o"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- END SECTION CONTACT -->
+    <!-- SECTION OUR CITY -->
+    <section class="our-city">
+        <div class="our-city__container">
+            <div class="our-city__header-box">
+                <h3 class="our-city__header">
+                    <span>
+                        our
+                    </span>
+                    <span class="our-city--color">
+                        city
+                    </span>
+                </h3>
+            </div>
+            <div class="our-city__row">
+                <div class="our-city__photo-box">
+                    <img src="" alt="" class="our-city__photo">
+                </div>
+                <p class="our-city txt">
+
+                </p>
+            </div>
+            <div class="our-city__row">
+                <div class="our-city__photo-box">
+                    <img src="img/opole-img.png" alt="opole photo" class="our-city__photo">
+                </div>
+                <p class="our-city txt">
+                    800-years-old Opole is a city full of students, but it also offers comfort and peace, often
+                    inaccessible in bigger centres.
+                    In this city modern architecture exists near historic buildings and landmarks, all of this
+                    available within just a few minutes walking distance.
+                </p>
+            </div>
+            <div class="our-city__row">
+                <div class="our-city__photo-box">
+                    <img src="img/opole-img.png" alt="opole photo" class="our-city__photo">
+                </div>
+                <p class="our-city txt">
+                    Opole is known for its long and beautiful cycle paths, not only through the city centre, but also
+                    along the Odra river or the city's bath areas. To find nature and lots of open space, all you need
+                    to do is walk to the Bolko Island and if that's not enough, a few kilometres from Opole lies Turawa
+                    – a lake suitable for both bathing and water-based sports.
+                </p>
+            </div>
+            <div class="our-city__row">
+                <div class="our-city__photo-box">
+                    <img src="img/opole-img.png" alt="opole photo" class="our-city__photo">
+                </div>
+                <p class="our-city txt">
+                    Opole is also the Capital City of Polish Song-writing, where during a yearly festival the city is
+                    alive with music – don't worry – not just Polish and not only popular!
+                    Whenever you feel a need to go to a wider world, Wrocław and Katowice are reachable within an hour
+                    – whether you use the highway or a train.
+                </p>
+            </div>
+    
+
+        </div>
+    </section>
 </body>
 
 </html>

@@ -13,5 +13,9 @@
             font-size: 5rem;
             font-weight: 700;
             z-index: 10;
+
+            &--orange {
+                color: $color-orange-4;
+            }
         }   
 }

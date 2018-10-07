@@ -1,0 +1,48 @@
+.our-city {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__container {
+        max-width: 80%;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+
+    }
+
+    &__header-box {
+      margin: 6rem 0;
+    }
+
+    &__header {
+        color: $color-black-3;
+        text-align: center;
+       
+
+        &--color {
+            color: $color-orange-1;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    &__photo-box {
+        
+    }
+
+    &__photo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__txt {
+       margin: 2rem 0;
+    }
+}

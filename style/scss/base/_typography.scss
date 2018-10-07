@@ -5,8 +5,13 @@ body {
 }
 
 .horizontal-line {
-    border-top: 6px solid $color-orange-1;
+    
     width: 100%;
+    &--small {
+        border-top: 1px solid $color-orange-1;
+        opacity: .8;
+
+    }
 
 }
 
@@ -57,6 +62,7 @@ body {
         font-weight: 900;
         text-transform: uppercase;
     }
+
     &__bold {
         font-size: 2.3rem;
         font-weight: 900;
@@ -69,7 +75,7 @@ body {
     }
 
     &__light {
-        font-size: 23px;
+        font-size: 2.3rem;
         font-weight: 300;
         line-height: 3rem;
         text-transform: capitalize;
@@ -131,8 +137,63 @@ body {
 .contact {
 
     &__header {
-        font-size: 2.8rem; //4.4
+        font-size: 4.4rem;
         font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+/////////////////////////
+// SECTION OUR CITY
+
+.our-city {
+
+    &__header {
+        font-size: 4.4rem; //4.4
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__txt {
+        color: $color-grey-5;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+    }
+
+}
+
+/////////////////////////
+// SECTION FOOTER
+
+.footer {
+
+    &__heading {
+        font-size: 1.8rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__name {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    &--upp {
+        font-weight: 900;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &--cap {
+        font-weight: 400;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+    }
+
+    &__copy {
+        font-size: 12px;
+        font-weight: 300;
         text-transform: uppercase;
     }
 }

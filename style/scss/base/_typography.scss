@@ -5,18 +5,17 @@ body {
 }
 
 .horizontal-line {
-    
-    width: 100%;
+    border-top: 6px solid $color-orange-1;
+    width: 99.9%;
     &--small {
         border-top: 1px solid $color-orange-1;
         opacity: .8;
-
     }
-
 }
 
 /////////////////////////
 // SECTION ABOUT
+
 .about {
 
     &__header {
@@ -24,6 +23,9 @@ body {
         font-weight: 900;
         text-transform: uppercase;
 
+        @include mq(large) {
+            font-size: 6rem;
+        }
     }
 
     &__txt {
@@ -46,9 +48,13 @@ body {
 .our-games {
 
     &__header {
-        font-size: 2.8rem; //44px;
+        font-size: 2.8rem;
         font-weight: 900;
         text-transform: uppercase;
+
+        @include mq(large) {
+            font-size: 4.4rem;
+        }
     }
 }
 
@@ -58,34 +64,53 @@ body {
 .team {
 
     &__header {
-        font-size: 2.8rem; //4.4
+        font-size: 2.8rem; 
         font-weight: 900;
         text-transform: uppercase;
+
+        @include mq(large) {
+            font-size: 4.4rem;
+        }
     }
 
     &__bold {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         font-weight: 900;
         text-transform: uppercase;
 
+        @include mq(large) {
+            font-size: 2.3rem;
+        }
+
         &--small {
-            font-size: 1.8rem;
+            font-size: 1.4rem; 
+            @include mq(large) {
+                font-size: 1.8rem;
+            }
         }
 
     }
 
     &__light {
-        font-size: 2.3rem;
+        font-size: 1.8rem; 
         font-weight: 300;
         line-height: 3rem;
         text-transform: capitalize;
+
+        @include mq(large) {
+            font-size: 2.3rem;
+        }
 
         &--upper {
             text-transform: uppercase;
         }
 
         &--small {
-            font-size: 1.8rem;
+            font-size: 1.4rem; 
+
+            @include mq(large) {
+                font-size: 1.8rem;
+            }
         }
     }
 
@@ -103,9 +128,13 @@ body {
 .jobs {
 
     &__header {
-        font-size: 4rem; //6
+        font-size: 4rem; 
         font-weight: 900;
         text-transform: uppercase;
+
+        @include mq(large) {
+            font-size: 6rem;
+        }
     }
 
     &__txt-bold {
@@ -113,15 +142,13 @@ body {
         font-weight: 700;
         line-height: 2.6rem;
         letter-spacing: 0.72px;
-
     }
 
     &__txt-light {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 500;
         letter-spacing: 0.3px;
         line-height: 28px;
-
     }
 
     &__mail {
@@ -149,7 +176,7 @@ body {
 .our-city {
 
     &__header {
-        font-size: 4.4rem; //4.4
+        font-size: 4.4rem; 
         font-weight: 900;
         text-transform: uppercase;
     }

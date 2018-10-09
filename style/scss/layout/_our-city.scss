@@ -6,43 +6,61 @@
 
     &__container {
         max-width: 80%;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-
+        margin-bottom: 5rem;
+        
+        @include mq(large) {
+            max-width: 58%;
+        }
     }
 
     &__header-box {
-      margin: 6rem 0;
+        margin: 6rem 0;
     }
 
     &__header {
         color: $color-black-3;
         text-align: center;
-       
+
 
         &--color {
             color: $color-orange-1;
         }
     }
 
+
     &__row {
         display: flex;
         flex-direction: column;
         align-items: center;
-        align-content: center;
+
+        @include mq(small) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
+    @include mq(small) {
+        &--order &__txt {
+            order: 1;
+            margin-right: 4.4rem;
+            
+        }
+
+        &--order &__photo-box {
+            order: 2;
+            margin: 0;
+        }
+    }
+    
     &__photo-box {
-        
-    }
-
-    &__photo {
         max-width: 100%;
         height: auto;
+        margin-right: 4.4rem;
     }
 
+
     &__txt {
-       margin: 2rem 0;
+        margin: 2rem 0;
     }
+    
 }

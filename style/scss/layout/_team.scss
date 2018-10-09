@@ -1,12 +1,14 @@
 .team {
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     &__container {
-        max-width: 950px;
+        max-width: 90%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     &__header-box {
@@ -29,10 +31,9 @@
         max-width: 100%;
         height: auto;
     }
+
     /////////////////////
     // MENAGEMENT & EMPLOYEE
-
-    &__management-box {}
 
     &__management {
         display: flex;
@@ -58,11 +59,15 @@
     
     &__employee-container {
         display: flex;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: column;
         position: relative;
         z-index: 20;
+        
+        @include mq(small) {
+            flex-direction: row;
+        }
         
     }
 
@@ -81,10 +86,7 @@
         background-color: $color-orange-1;
         text-align: center;
         color: $color-white-1;
-        // margin-bottom: 3rem;
     }
-
-    &__employee {}
 
     &__single {
         display: flex;
@@ -96,11 +98,11 @@
 
     
 
-    &__design, &__art {
+    // &__design, &__art, &__code {
+    //     margin-right: 4rem;
         
         
-        // flex: 1;
-    }
+    // }
 
 
     &__code {
@@ -117,14 +119,6 @@
          margin: 0 auto;
        
     }
-
-  
-
-
-
-
-
-    
 
 
 

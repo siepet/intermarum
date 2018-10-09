@@ -1,4 +1,5 @@
 .about {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,6 +12,19 @@
         align-content: center;
         align-items: center;
         max-width: 90%;
+
+        @include mq(small) {
+            max-width: 80%;
+            flex-direction: row;
+
+            & > :first-child{
+                margin-right: 8rem;
+            }
+        }
+        
+        @include mq(medium) {
+            max-width: 60%;
+        }
     }
 
     &__about-us {
@@ -18,13 +32,17 @@
         flex-direction: column;
         align-items: center;
 
+        @include mq(small) {
+            flex-direction: row;
+           flex-wrap: wrap;
+            
+        }
     }
 
     &__header {
-        
         text-align: center;
         display: inline-block;
-        margin: 4rem 0; //9rem 0 6rem 0;
+        margin: 4rem 0; 
         &:after {
             content: "";
             display: block;
@@ -35,20 +53,20 @@
         }
     }
 
-
-
-    // &__border {
-    //     display: block;
-    //     width: 25%;
-    //     height: 6px;
-    //     background-color: $color-orange-1;
-        
-        
-    // }
+    &__content {
+        @include mq(small) {
+        display: flex;
+        }
+    }
 
     &__txt:not(:last-child) {
         margin-bottom: 2rem;
     }
 
+    &__txt:first-child {
+        @include mq(small) {
+            margin-right: 4rem;
+        }
+    }
 
 }

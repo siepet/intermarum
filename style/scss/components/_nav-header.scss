@@ -4,27 +4,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2.5rem 0;
 
-    &__logo {
-        margin-bottom: .8rem
+    @include mq(very-small) {
+        flex-direction: row;
     }
+    
+    &__logo {
+        margin-bottom: .8rem;
 
-    &__box-1 {}
+        @include mq(very-small) {
+            order: 2;
+            margin: 0 1.5rem;
+        }
+    }
 
     &__items {
         display: flex;
-
-
     }
 
     &__items-1 {
         margin-bottom: 1rem;
+        order: 1;
+        
+        @include mq(very-small) {
+            margin: 0;
+        }
     }
 
-    &__items-2 {}
+    &__items-2 {
+        order: 3;
+    }
 
 
-    &__list {
+    &__list:not(:last-child) {
         margin-right: 2rem;
     }
 
@@ -32,10 +45,13 @@
 
         &:link,
         &:visited {
+            display: inline-block;
             color: $color-white-2;
             font-weight: 300;
             font-size: 1.5rem;
             text-transform: uppercase;
+            text-align: center;
+            
         }
 
         &:hover {

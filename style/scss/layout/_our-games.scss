@@ -3,14 +3,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     &__container {
-        max-width: 95rem;
+
         display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        align-items: center;
-        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 5rem 0;
+
+        @include mq(medium) {
+            max-width: 90%;
+        }
     }
 
     &__header-box {
@@ -23,7 +25,7 @@
         margin: 6rem 0 6rem 0;
 
         &--white {
-            color :$color-white-1;
+            color: $color-white-1;
         }
 
         &--orange {
@@ -32,7 +34,11 @@
 
     }
 
-    &__boxes > * {
-        margin-bottom: 3rem;
+
+    &__boxes {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

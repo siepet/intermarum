@@ -26,24 +26,24 @@
                 </div>
                 <ul class="nav-header__items nav-header__items-1">
                     <li class="nav-header__list">
-                        <a href="#" class="nav-header__link">about us</a>
+                        <a href="#about" class="nav-header__link">about us</a>
                     </li>
                     <li class="nav-header__list">
-                        <a href="#" class="nav-header__link">our games</a>
+                        <a href="#games" class="nav-header__link">our games</a>
                     </li>
                     <li class="nav-header__list">
-                        <a href="#" class="nav-header__link">team</a>
+                        <a href="#team" class="nav-header__link">team</a>
                     </li>
                 </ul>
-                <ul class="nav-header__items nav-header__items-">
+                <ul class="nav-header__items nav-header__items-2">
                     <li class="nav-header__list">
-                        <a href="#" class="nav-header__link">jobs</a>
+                        <a href="#jobs" class="nav-header__link">jobs</a>
                     </li>
                     <li class="nav-header__list">
-                        <a href="#" class="nav-header__link">our city</a>
+                        <a href="#city" class="nav-header__link">our city</a>
                     </li>
                     <li class="nav-header__list">
-                        <a href="#" class="nav-header__link">contact</a>
+                        <a href="#contact" class="nav-header__link">contact</a>
                     </li>
                 </ul>
 
@@ -51,10 +51,10 @@
 
             <h1 class="header__logo">
                 <img src="img/logo-text.png" alt="intermarium">
-            </h1>>
+            </h1>
 
             <div class="header__cta">
-                <a href="#" class="btn-primary">
+                <a href="#games" class="btn-primary">
                     <span class="btn-primary__txt">our games</span>
                     <span class="btn-primary__icon-box">
                         <svg class="btn-primary__icon">
@@ -62,7 +62,7 @@
                         </svg>
                     </span>
                 </a>
-                <a href="#" class="btn-primary">
+                <a href="#contact" class="btn-primary">
                     <span class="btn-primary__txt">contact us</span>
                     <span class="btn-primary__icon-box">
                         <svg class="btn-primary__icon">
@@ -81,7 +81,7 @@
 
     <main>
 
-        <section class="about">
+        <section id="about" class="about">
 
             <div class="about__container">
 
@@ -95,19 +95,22 @@
                     <h2 class="about__header">
                         about us
                     </h2>
-                    <p class="about__txt">
-                        Our company was founded in 2010.
-                        Ever since, we wanted to create games taking the best from many genres, but at the same time
-                        unique
-                        in their approach.
-                    </p>
-                    <p class="about__txt about__txt--light">
-                        In the cozy and beautiful city of Opole, located in the south of Poland, we try to make our
-                        dreams
-                        a reality. The silence and peace give
-                        us the proper accomodation to do our work
-                        in a truly independent style.
-                    </p>
+                    <div class="about__content">
+                        <p class="about__txt">
+                            Our company was founded in 2010.
+                            Ever since, we wanted to create games taking the best from many genres, but at the same
+                            time
+                            unique
+                            in their approach.
+                        </p>
+                        <p class="about__txt about__txt--light">
+                            In the cozy and beautiful city of Opole, located in the south of Poland, we try to make our
+                            dreams
+                            a reality. The silence and peace give
+                            us the proper accomodation to do our work
+                            in a truly independent style.
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -122,7 +125,7 @@
 
         <!-- SECTION OUR GAMES -->
 
-        <section class="our-games wave-background">
+        <section id="games" class="our-games wave-background">
 
             <div class="our-games__container">
 
@@ -231,7 +234,7 @@
         <!-- END SECTION OUR GAMES -->
         <!-- SECTION TEAM -->
 
-        <section class="team">
+        <section id="team" class="team">
 
             <div class="team__container">
 
@@ -349,15 +352,20 @@
                     </div>
 
                 </div>
-
+            </div>
         </section>
 
         <!-- END SECTION TEAM -->
         <!-- SECTION JOBS -->
 
-        <div class="jobs__bg-top">&nbsp;</div>
-        <section class="jobs">
-            <div class="jobs__container">
+        <div class="jobs__bg-top">&nbsp;
+
+        </div>
+
+        <section id="jobs" class="jobs">
+
+            <div id="jobs" class="jobs__container">
+
                 <div class="icon-photo">
                     <figure class="icon-photo__photo-box">
                         <img src="img/icin-circle-dark.png" alt="circle" class="icon-photo__img">
@@ -391,6 +399,7 @@
                         </p>
                     </div>
                 </div>
+
             </div>
 
         </section>
@@ -398,8 +407,10 @@
         <!--END SECTION JOBS  -->
         <!-- SECTION CONTACT -->
 
-        <section class="contact wave-background">
+        <section id="contact" class="contact wave-background">
+
             <div class="contact__container">
+
                 <h3 class="contact__header">
                     <span>
                         contact
@@ -409,6 +420,7 @@
                     </span>
                 </h3>
                 <form action="" class="form">
+
                     <div class="form__column-1">
                         <div class="form__group">
                             <span class="form__icon-bg">
@@ -444,7 +456,7 @@
                             </span>
                             <textarea name="" id="message" placeholder="Your Message" class="form__input form__textarea"></textarea>
                         </div>
-                        <button class="btn-primary btn-primary--big">
+                        <button class="btn-primary btn-primary--light">
                             <span class="btn-primary__txt">send message</span>
                             <span class="btn-primary__icon-box">
                                 <svg class="btn-primary__icon">
@@ -453,13 +465,18 @@
                             </span>
                         </button>
                     </div>
+
                 </form>
             </div>
+
         </section>
+
         <!-- END SECTION CONTACT -->
         <!-- SECTION OUR CITY -->
-        <section class="our-city">
+        <section id="city" class="our-city">
+
             <div class="our-city__container">
+
                 <div class="our-city__header-box">
                     <h3 class="our-city__header">
                         <span>
@@ -470,7 +487,9 @@
                         </span>
                     </h3>
                 </div>
+
                 <article class="our-city__opole">
+
                     <div class="our-city__row">
                         <div class="our-city__photo-box">
                             <img src="img/opole-img.png" alt="opole photo" class="our-city__photo">
@@ -482,21 +501,16 @@
                             available within just a few minutes walking distance.
                         </p>
                     </div>
-                    <div class="our-city__row">
+                    <div class="our-city__row our-city--order">
                         <div class="our-city__photo-box">
                             <img src="img/opole-img.png" alt="opole photo" class="our-city__photo">
                         </div>
                         <p class="our-city__txt">
                             Opole is known for its long and beautiful cycle paths, not only through the city centre,
-                            but
-                            also
-                            along the Odra river or the city's bath areas. To find nature and lots of open space, all
-                            you
-                            need
-                            to do is walk to the Bolko Island and if that's not enough, a few kilometres from Opole
-                            lies
-                            Turawa
-                            – a lake suitable for both bathing and water-based sports.
+                            but also along the Odra river or the city's bath areas. To find nature and lots of open
+                            space, all you need to do is walk to the Bolko Island and if that's not enough, a few
+                            kilometres from Opole lies Turawa – a lake suitable for both bathing and water-based
+                            sports.
                         </p>
                     </div>
                     <div class="our-city__row">
@@ -514,6 +528,7 @@
                             – whether you use the highway or a train.
                         </p>
                     </div>
+
                 </article>
 
             </div>
@@ -533,7 +548,6 @@
             <div class="footer__container">
 
                 <div class="footer__details">
-
                     <div class="footer__contact">
                         <h5 class="footer__heading">
                             contact us
@@ -584,27 +598,27 @@
 
                         <ul class="nav-footer__list">
                             <li class="nav-footer__item">
-                                <a href="#" class="nav-footer__link">
+                                <a href="#about" class="nav-footer__link">
                                     about us
                                 </a>
                             </li>
                             <li class="nav-footer__item">
-                                <a href="#" class="nav-footer__link">
+                                <a href="#games" class="nav-footer__link">
                                     our games
                                 </a>
                             </li>
                             <li class="nav-footer__item">
-                                <a href="#" class="nav-footer__link">
+                                <a href="#team" class="nav-footer__link">
                                     team
                                 </a>
                             </li>
                             <li class="nav-footer__item">
-                                <a href="#" class="nav-footer__link">
+                                <a href="#jobs" class="nav-footer__link">
                                     jobs
                                 </a>
                             </li>
                             <li class="nav-footer__item">
-                                <a href="#" class="nav-footer__link">
+                                <a href="#city" class="nav-footer__link">
                                     our city
                                 </a>
                             </li>

@@ -1,0 +1,68 @@
+.sliding-icon {
+    display: none;
+    position: relative;
+    position: absolute;
+    border-radius: 50%;
+    transition: overflow 3s;
+
+    &--1 {
+        
+        bottom: 3rem;
+        left: 8rem;
+    }
+
+    &--2 {
+        
+        bottom: 2rem;
+        left: 15rem;
+    }
+
+    &--3 {
+        
+        bottom: 3rem;
+        left: 23rem;
+    }
+
+    &__plus {
+
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-orange-1;
+        color: $color-white-1;
+        font-size: 2.3rem;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        z-index: 1;
+
+    }
+
+    &__plus:hover~&__name {
+        opacity: 1;
+    }
+
+    &__plus:hover {
+        background-color: $color-white-1;
+    }
+
+    &__name {
+           display: flex;
+        align-items: center;
+        height: 2.5rem;
+        width: 14rem;
+        font-size: 1.2rem;
+        color: $color-white-1;
+        font-weight: 400;
+        background-color: $color-orange-1;
+        border-radius: 1.1rem;
+        padding: .5rem 3rem;
+        opacity: 0;
+        transition: opacity .3s;
+
+    }
+
+}

@@ -480,6 +480,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 3rem 0; }
+  .header__logo-img {
+    width: 100%; }
   .header__cta {
     display: flex;
     flex-direction: column;
@@ -499,15 +501,15 @@ body {
 .about {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 4rem 0; }
+  align-items: center; }
   .about__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-    max-width: 90%; }
+    max-width: 90%;
+    margin: 4rem 0; }
     @media only screen and (min-width: 50.06em) {
       .about__container {
         max-width: 80%;
@@ -545,13 +547,6 @@ body {
     .about__txt:first-child {
       margin-right: 4rem; } }
 
-.bg-video {
-  background-image: linear-gradient(0deg, rgba(139, 139, 139, 0.6), rgba(139, 139, 139, 0.6)), url(/img/video-img.jpg);
-  background-size: cover;
-  background-position: left;
-  width: 100%;
-  height: 30rem; }
-
 .our-games {
   display: flex;
   flex-direction: column;
@@ -559,7 +554,8 @@ body {
   .our-games__container {
     display: flex;
     flex-direction: column;
-    margin: 5rem 0; }
+    margin: 5rem 0;
+    width: 100%; }
     @media only screen and (min-width: 64.06em) {
       .our-games__container {
         max-width: 90%; } }
@@ -573,6 +569,7 @@ body {
     .our-games__header--orange {
       color: #f7941d; }
   .our-games__boxes {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
@@ -594,6 +591,8 @@ body {
     color: #1c1a18; }
     .team__header--color {
       color: #f7941d; }
+  .team__photo-box {
+    position: relative; }
   .team__photo {
     max-width: 100%;
     height: auto; }
@@ -836,9 +835,15 @@ body {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: #f7941d; }
+    background-color: #f7941d;
+    transition: all .3s; }
     .footer__icon-link:not(:last-child) {
       margin-right: 1.8rem; }
+    @media only screen and (min-width: 78.06em) {
+      .footer__icon-link:hover {
+        background-color: #ffffff; }
+      .footer__icon-link > *:hover {
+        fill: #f7941d; } }
   .footer__icon {
     fill: #ffffff;
     width: 3rem;
@@ -896,6 +901,7 @@ body {
   background-color: #ff8200;
   border: none;
   outline: none;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -972,11 +978,11 @@ body {
     position: absolute;
     top: 0;
     left: 0; }
-    @media only screen and (min-width: 64.06em) {
+    @media only screen and (min-width: 78.06em) {
       .game-box__content {
         transform: translateY(74%);
         background-color: transparent; } }
-  @media only screen and (min-width: 64.06em) {
+  @media only screen and (min-width: 78.06em) {
     .game-box:hover .game-box__content {
       transform: translateY(0);
       transition: all .3s;
@@ -1028,6 +1034,26 @@ body {
   z-index: 10; }
   .icon-photo__icon--orange {
     color: #e47307; }
+
+.bg-video {
+  display: none;
+  position: relative;
+  background-color: rgba(36, 34, 32, 0.6);
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+  overflow: hidden; }
+  .bg-video__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; }
+  @media only screen and (min-width: 78.06em) {
+    .bg-video {
+      display: block; } }
 
 .form {
   display: flex;
@@ -1119,3 +1145,50 @@ body {
 
 .nav-footer__link:hover {
   color: #f7941d; }
+
+.sliding-icon {
+  display: none;
+  position: relative;
+  position: absolute;
+  border-radius: 50%;
+  transition: overflow 3s; }
+  .sliding-icon--1 {
+    bottom: 3rem;
+    left: 8rem; }
+  .sliding-icon--2 {
+    bottom: 2rem;
+    left: 15rem; }
+  .sliding-icon--3 {
+    bottom: 3rem;
+    left: 23rem; }
+  .sliding-icon__plus {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7941d;
+    color: #ffffff;
+    font-size: 2.3rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1; }
+  .sliding-icon__plus:hover ~ .sliding-icon__name {
+    opacity: 1; }
+  .sliding-icon__plus:hover {
+    background-color: #ffffff; }
+  .sliding-icon__name {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    width: 14rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #f7941d;
+    border-radius: 1.1rem;
+    padding: .5rem 3rem;
+    opacity: 0;
+    transition: opacity .3s; }

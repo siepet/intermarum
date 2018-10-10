@@ -25,7 +25,9 @@
         }
     }
 
-    &__photo-box {}
+    &__photo-box {
+        position: relative;
+    }
 
     &__photo {
         max-width: 100%;

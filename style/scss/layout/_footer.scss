@@ -109,9 +109,20 @@
         height: 5rem;
         border-radius: 50%;
         background-color: $color-orange-1;
+        transition: all .3s;
 
         &:not(:last-child) {
             margin-right: 1.8rem;
+        }
+
+        @include mq(large) {
+            &:hover {
+                background-color: $color-white-1;
+            }
+
+            & > *:hover {
+                fill: $color-orange-1;
+            }
         }
 
     }

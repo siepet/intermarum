@@ -22,13 +22,13 @@
         top: 0;
         left: 0;
 
-        @include mq (medium) {
+        @include mq (large) {
             transform: translateY(74%);
             background-color: transparent;
         }
     }
 
-    @include mq(medium) {
+    @include mq(large) {
 
         &:hover &__content {
 

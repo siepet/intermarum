@@ -491,7 +491,7 @@ body {
     @media only screen and (min-width: 37.56em) {
       .header__cta {
         flex-direction: row;
-        justify-content: space-evenly; } }
+        justify-content: space-around; } }
   .header__cta .btn-primary:first-child {
     margin-bottom: 3rem; }
     @media only screen and (min-width: 37.56em) {
@@ -583,6 +583,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (min-width: 64.06em) {
+      .team__container {
+        max-width: 80%; } }
   .team__header-box {
     width: 100%;
     text-align: center;
@@ -615,11 +618,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
+    width: 100%;
     position: relative;
     z-index: 20; }
     @media only screen and (min-width: 50.06em) {
       .team__employee-container {
-        flex-direction: row; } }
+        flex-direction: row;
+        flex-wrap: wrap; } }
   .team__heading-box {
     flex: 100%;
     display: flex;
@@ -647,6 +652,8 @@ body {
     flex: 2; }
   .team__column-1, .team__column-2 {
     margin: 0 auto; }
+  .team__office {
+    width: 100%; }
 
 .jobs {
   display: flex;
@@ -654,15 +661,13 @@ body {
   align-items: center;
   background-color: #f7941d; }
   .jobs__bg-top {
-    height: 25rem;
+    height: 21rem;
+    width: 100%;
     background-color: #f7941d;
     background-image: url(/img/bg-wave-orange.svg);
     background-position: bottom;
     background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-    backface-visibility: hidden;
-    margin-top: -15rem; }
+    margin-top: -6rem; }
   .jobs__container {
     max-width: 90%;
     display: flex;
@@ -1124,9 +1129,38 @@ body {
       .form .btn-primary {
         align-self: flex-end; } }
 
-.map__img {
-  width: 100%;
-  height: auto; }
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .map__iframe-box {
+    position: relative;
+    width: 100%;
+    margin-top: 2rem; }
+    .map__iframe-box::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      width: 93%;
+      height: 100%;
+      background-color: transparent; }
+  .map__link:link, .map__link:visited {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 1.1rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #f7941d;
+    border: 1px solid transparent;
+    transition: all .3s; }
+    @media only screen and (min-width: 78.06em) {
+      .map__link:link:hover, .map__link:visited:hover {
+        background-color: #ffffff;
+        color: #f7941d;
+        border: 1px solid #f7941d; } }
 
 .nav-footer__list {
   display: flex;

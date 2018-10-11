@@ -9,6 +9,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include mq(medium) {
+            max-width: 80%;
+        }
     }
 
     &__header-box {
@@ -64,11 +68,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: column;
+        width: 100%;
         position: relative;
         z-index: 20;
         
         @include mq(small) {
             flex-direction: row;
+            flex-wrap: wrap;
         }
         
     }
@@ -98,15 +104,6 @@
         white-space: nowrap;
     }
 
-    
-
-    // &__design, &__art, &__code {
-    //     margin-right: 4rem;
-        
-        
-    // }
-
-
     &__code {
        display: flex;
        flex-wrap: wrap;
@@ -120,6 +117,10 @@
     &__column-1, &__column-2 {
          margin: 0 auto;
        
+    }
+
+    &__office {
+       width: 100%;
     }
 
 

@@ -13,6 +13,10 @@
         @include mq(medium) {
             max-width: 80%;
         }
+
+        @include mq(large) {
+            max-width: 70%;
+        }
     }
 
     &__header-box {
@@ -110,19 +114,13 @@
        justify-content: center;
        align-items: center;
        flex: 2;
-       
-       
     }
 
-    &__column-1, &__column-2 {
-         margin: 0 auto;
-       
+    &__column-1 {
+         margin-right: 5rem;
     }
 
     &__office {
        width: 100%;
     }
-
-
-
 }

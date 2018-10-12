@@ -689,6 +689,9 @@ body {
     @media only screen and (min-width: 64.06em) {
       .team__container {
         max-width: 80%; } }
+    @media only screen and (min-width: 78.06em) {
+      .team__container {
+        max-width: 70%; } }
   .team__header-box {
     width: 100%;
     text-align: center;
@@ -803,8 +806,8 @@ body {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2; }
-  .team__column-1, .team__column-2 {
-    margin: 0 auto; }
+  .team__column-1 {
+    margin-right: 5rem; }
   .team__office {
     width: 100%; }
 

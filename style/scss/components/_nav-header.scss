@@ -9,7 +9,7 @@
     @include mq(very-small) {
         flex-direction: row;
     }
-    
+
     &__logo {
         margin-bottom: .8rem;
 
@@ -26,7 +26,7 @@
     &__items-1 {
         margin-bottom: 1rem;
         order: 1;
-        
+
         @include mq(very-small) {
             margin: 0;
         }
@@ -51,7 +51,7 @@
             font-size: 1.5rem;
             text-transform: uppercase;
             text-align: center;
-            
+
         }
 
         &:hover {

@@ -7,7 +7,7 @@
     &__container {
         max-width: 80%;
         margin-bottom: 5rem;
-        
+
         @include mq(large) {
             max-width: 58%;
         }
@@ -43,7 +43,7 @@
         &--order &__txt {
             order: 1;
             margin-right: 4.4rem;
-            
+
         }
 
         &--order &__photo-box {
@@ -51,16 +51,19 @@
             margin: 0;
         }
     }
-    
+
     &__photo-box {
         max-width: 100%;
         height: auto;
         margin-right: 4.4rem;
     }
 
+    &__photo {
+      height: 285px;
+    }
 
     &__txt {
         margin: 2rem 0;
     }
-    
+
 }

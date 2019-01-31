@@ -1,0 +1,43 @@
+.header {
+  &__toggle {
+    position: absolute;
+    top: 88px;
+    right: 200px;
+    display: flex;
+    font-size: 13px;
+    background-color: #22201e;
+    font-weight: 600;
+
+    &--left {
+      width: 40px;
+      padding: 7px 7px 7px 14px;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      opacity: .7;
+      background-color: #736A60;
+      color: #C2BAB2;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &--right {
+      padding: 7px 14px 7px 7px;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px;
+      background-color: #736A60;
+      opacity: .7;
+      color: #C2BAB2;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &--active {
+      opacity: 1;
+    }
+
+  }
+}

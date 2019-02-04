@@ -657,6 +657,14 @@ body {
     margin-right: 5rem; }
   .team__office {
     width: 100%; }
+  .team__employees {
+    display: grid; }
+    .team__employees--1-cols {
+      grid-template-columns: 1fr; }
+    .team__employees--2-cols {
+      grid-template-columns: 1fr 1fr; }
+    .team__employees--3-cols {
+      grid-template-columns: 1fr 1fr 1fr; }
 
 .jobs {
   display: flex;

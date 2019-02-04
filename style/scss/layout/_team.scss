@@ -66,7 +66,7 @@
     &__ceo:first-child {
         margin-bottom: 1rem;
     }
-    
+
     &__employee-container {
         display: flex;
         flex-wrap: wrap;
@@ -75,12 +75,12 @@
         width: 100%;
         position: relative;
         z-index: 20;
-        
+
         @include mq(small) {
             flex-direction: row;
             flex-wrap: wrap;
         }
-        
+
     }
 
     &__heading-box {
@@ -121,6 +121,22 @@
     }
 
     &__office {
-       width: 100%;
+      width: 100%;
+    }
+
+    &__employees {
+      display: grid;
+
+      &--1-cols {
+        grid-template-columns: 1fr;
+      }
+
+      &--2-cols {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      &--3-cols {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
 }

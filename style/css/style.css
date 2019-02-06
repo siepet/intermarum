@@ -615,7 +615,12 @@ body {
   .team__leads {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0 15rem; }
+    grid-gap: 0 15rem;
+    margin-top: 3rem; }
+    @media only screen and (max-width: 50em) {
+      .team__leads {
+        display: flex;
+        flex-direction: column; } }
   .team__light {
     color: #6d6d6d; }
   .team__ceo:first-child {
@@ -651,18 +656,16 @@ body {
     align-items: center;
     margin-bottom: 3rem;
     white-space: nowrap; }
-  .team__coder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex: 2; }
   .team__column-1 {
     margin-right: 5rem; }
   .team__office {
     width: 100%; }
   .team__employees {
     display: grid; }
+    @media only screen and (max-width: 64em) {
+      .team__employees {
+        display: flex;
+        flex-direction: column; } }
     .team__employees--1-cols {
       grid-template-columns: 1fr; }
     .team__employees--2-cols {

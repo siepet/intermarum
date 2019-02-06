@@ -63,6 +63,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 0 15rem;
+      margin-top: 3rem;
+
+      @include mq(small, max) {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     &__light {
@@ -114,12 +120,7 @@
         white-space: nowrap;
     }
 
-    &__coder {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-       align-items: center;
-       flex: 2;
+    &__code {
     }
 
     &__column-1 {
@@ -132,6 +133,11 @@
 
     &__employees {
       display: grid;
+
+      @include mq(medium, max) {
+        display: flex;
+        flex-direction: column;
+      }
 
       &--1-cols {
         grid-template-columns: 1fr;

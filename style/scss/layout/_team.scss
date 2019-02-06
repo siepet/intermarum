@@ -59,6 +59,12 @@
         color: $color-black-3;
     }
 
+    &__leads {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 0 15rem;
+    }
+
     &__light {
         color: $color-grey-1;
     }
@@ -108,7 +114,7 @@
         white-space: nowrap;
     }
 
-    &__code {
+    &__coder {
        display: flex;
        flex-wrap: wrap;
        justify-content: center;

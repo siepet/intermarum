@@ -6,13 +6,35 @@
     background-color: $color-orange-1;
 
     &__bg-top {
-        height: 21rem;
-        width: 100%;
-        background-color: $color-orange-1;
-        background-image: url('../../img/bg-wave-orange.svg');
-        background-position: bottom;
-        background-repeat: no-repeat;
-        margin-top: -6rem;
+      @include mq(very-extra-small) {
+        height: 8rem;
+        margin-top: -4rem;
+      }
+
+      @include mq(very-small) {
+        height: 9rem;
+        margin-top: -5rem;
+      }
+
+      @include mq(small) {
+        height: 10rem;
+        margin-top: -5rem;
+      }
+
+      @include mq(medium) {
+        height: 40rem;
+        margin-top: -22rem;
+      }
+
+      @include mq(large) {
+        height: 44rem;
+        margin-top: -24rem;
+      }
+
+      @include mq(very-large) {
+        height: 50rem;
+        margin-top: -26rem;
+      }
     }
 
     &__container {
@@ -20,7 +42,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 3rem 0 5rem 0;
+        margin: 0 0 5rem 0;
 
         @include mq (small) {
             flex-direction: row;

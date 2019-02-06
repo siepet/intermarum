@@ -3,4 +3,16 @@
     background-image: url(../../img/weave_grey_2.png);
     background-position: bottom;
     background-repeat: no-repeat;
+
+    @include mq(very-large) {
+      background-size: 250rem;
+    }
+
+    @include mq(very-small) {
+      background-size: 73rem;
+    }
+
+    @include mq(small) {
+      background-size: 85rem;
+    }
 }

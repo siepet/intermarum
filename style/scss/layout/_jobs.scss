@@ -7,17 +7,17 @@
 
     &__bg-top {
       @include mq(very-extra-small) {
-        height: 8rem;
+        height: 9rem;
         margin-top: -4rem;
       }
 
       @include mq(very-small) {
-        height: 9rem;
+        height: 15rem;
         margin-top: -5rem;
       }
 
       @include mq(small) {
-        height: 10rem;
+        height: 15rem;
         margin-top: -5rem;
       }
 

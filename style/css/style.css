@@ -677,15 +677,15 @@ body {
   background-color: #f7941d; }
   @media only screen and (min-width: 22.06em) {
     .jobs__bg-top {
-      height: 8rem;
+      height: 9rem;
       margin-top: -4rem; } }
   @media only screen and (min-width: 37.56em) {
     .jobs__bg-top {
-      height: 9rem;
+      height: 15rem;
       margin-top: -5rem; } }
   @media only screen and (min-width: 50.06em) {
     .jobs__bg-top {
-      height: 10rem;
+      height: 15rem;
       margin-top: -5rem; } }
   @media only screen and (min-width: 64.06em) {
     .jobs__bg-top {
@@ -1042,6 +1042,15 @@ body {
   background-image: url(../../img/weave_grey_2.png);
   background-position: bottom;
   background-repeat: no-repeat; }
+  @media only screen and (min-width: 112.56em) {
+    .wave-background {
+      background-size: 250rem; } }
+  @media only screen and (min-width: 37.56em) {
+    .wave-background {
+      background-size: 73rem; } }
+  @media only screen and (min-width: 50.06em) {
+    .wave-background {
+      background-size: 85rem; } }
 
 .game-box {
   position: relative;

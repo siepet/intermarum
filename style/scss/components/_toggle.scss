@@ -8,6 +8,17 @@
     background-color: #22201e;
     font-weight: 600;
 
+
+    @include mq(medium, max) {
+      top: 152px;
+      right: 263px;
+    }
+
+    @include mq(very-small, max) {
+      top: 215px;
+      right: 137px;
+    }
+
     &--left {
       width: 40px;
       padding: 7px 7px 7px 14px;

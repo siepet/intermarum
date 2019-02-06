@@ -811,6 +811,9 @@ body {
       grid-template-columns: 3fr 4fr;
       overflow: hidden;
       border-radius: 30px; }
+      @media only screen and (max-width: 64em) {
+        .our-city__block--grid {
+          display: block; } }
   .our-city__top-txt {
     position: absolute;
     top: 20px;
@@ -839,6 +842,12 @@ body {
     color: #fff; }
     .our-city__txt--left {
       float: left; }
+    @media only screen and (max-width: 50em) {
+      .our-city__txt {
+        color: #4c4c4c;
+        opacity: 1;
+        position: static;
+        width: 100%; } }
 
 .block__sub {
   grid-column: 1;
@@ -1284,6 +1293,14 @@ body {
   font-size: 13px;
   background-color: #22201e;
   font-weight: 600; }
+  @media only screen and (max-width: 64em) {
+    .header__toggle {
+      top: 152px;
+      right: 263px; } }
+  @media only screen and (max-width: 37.5em) {
+    .header__toggle {
+      top: 215px;
+      right: 137px; } }
   .header__toggle--left {
     width: 40px;
     padding: 7px 7px 7px 14px;

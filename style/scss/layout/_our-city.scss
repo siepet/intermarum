@@ -71,6 +71,10 @@
         grid-template-columns: 3fr 4fr;
         overflow: hidden;
         border-radius: 30px;
+
+        @include mq(medium, max) {
+          display: block;
+        }
       }
 
     }
@@ -115,6 +119,13 @@
 
         &--left {
           float: left;
+        }
+
+        @include mq(small, max) {
+          color: #4c4c4c;
+          opacity: 1;
+          position: static;
+          width: 100%;
         }
     }
 

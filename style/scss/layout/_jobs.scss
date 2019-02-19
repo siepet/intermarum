@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     background-color: $color-orange-1;
+    overflow-x: hidden;
 
     &__bg-top {
       @include mq(very-extra-small) {

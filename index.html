@@ -407,7 +407,7 @@
               us
             </span>
         </h3>
-        <form action="" class="form">
+        <form action="form.php" method="POST" class="form">
 
           <div class="form__column-1">
             <div class="form__group">
@@ -416,7 +416,7 @@
                     <use xlink:href="img/icon/sprite.svg#icon-user"></use>
                   </svg>
                 </span>
-              <input type="text" class="form__input" placeholder="Your Name" id="name" required>
+              <input type="text" class="form__input" placeholder="Your Name" name="name" id="name" required>
             </div>
             <div class="form__group">
               <span class="form__icon-bg">
@@ -424,7 +424,7 @@
                     <use xlink:href="img/icon/sprite.svg#icon-envelope-o"></use>
                   </svg>
                 </span>
-              <input type="text" class="form__input" placeholder="Your Email" id="mail" required>
+              <input type="text" class="form__input" placeholder="Your Email" name="mail" id="mail" required>
             </div>
             <div class="form__group">
               <span class="form__icon-bg">
@@ -432,7 +432,7 @@
                     <use xlink:href="img/icon/sprite.svg#icon-sphere"></use>
                   </svg>
                 </span>
-              <input type="text" class="form__input" placeholder="Your Website (optional)" id="website">
+              <input type="text" class="form__input" placeholder="Your Website (optional)" name="website" id="website">
             </div>
           </div>
           <div class="form__column-2">
@@ -442,7 +442,7 @@
                     <use xlink:href="img/icon/sprite.svg#icon-sphere"></use>
                   </svg>
                 </span>
-              <textarea name="" id="message" placeholder="Your Message" class="form__input form__textarea"></textarea>
+              <textarea name="message" id="message" placeholder="Your Message" class="form__input form__textarea"></textarea>
             </div>
             <button class="btn-primary btn-primary--light">
                 <span class="btn-primary__txt">send message</span>
